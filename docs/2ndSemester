@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Unopar - Minha apresentação - Fórum 2</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="utf-8" />
+        <style type="text/css">
+            @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+            body, html {
+                margin: 0;
+                padding: 0;
+            }
+            #picture_background {
+                background-color: #3A3A3A;
+                width: 100%;
+                height: 200px;
+                min-height: 10vw;
+                max-height: 20vw;
+                padding-top: 20px;
+            }
+            #picture_background > #container {
+                width: 100%;
+                height: auto;
+                display: block;
+                color: #FFF;
+                text-align: center;
+            }
+            #picture_background > #container .pic {
+                max-width: 284px;
+                display: inline-block;
+                vertical-align: top;
+            }
+            #picture_background > #container .info {
+                display: inline-block;
+                width: 38%;
+                margin-top: 25px;
+                padding: 40px;
+                text-align: left;
+            }
+            #picture_background > #container .info h1 {
+                font-family: Lato Black;
+                font-size: 30pt;
+            }
+             #picture_background > #container .info h4 {
+                font-family: Lato Light;
+                font-size: 20pt;
+                font-weight: 100;
+                margin-top: -35px;
+                width: 100%;
+            }
+            #picture_background > #container img {
+                border-radius: 50%;
+                border: #62BFC9 8px solid;
+                width: 100%;
+            }
+            #content_background {
+                background-color: #20839C;
+                width: 100%;
+                min-height: 700px;
+            }
+            #content_background #container {
+               text-align: center;
+            }
+            #content_background #container h4 {
+               color: #FFF;
+               font-family: Lato;
+               font-size: 15pt;
+            }
+            #info {
+                width: 20%;
+                height: 100px;
+                margin-top: 70px;
+                padding-left: 50px;
+                display: inline-block;
+                vertical-align: top;
+                background-color:#333;
+            }
+            #info h1 {
+                font-family: Lato Black;
+                font-size: 40pt;
+                color: #FFF;
+            }
+            #info h3 {
+                font-family: Lato Light;
+                font-size: 18pt;
+                color: #FFF;
+                font-weight: 200;
+                margin-top: -40px;
+            }
+            #item {
+                display: inline-block;
+                vertical-align: top;
+                padding: 25px;
+                font-family: Lato;
+                text-align: left;
+            }
+            #item.video {
+                vertical-align: top;
+                margin-top: 80px;
+            }
+            #item.list {
+                margin-top: -20px;
+            }
+            #item.list h1, #item.contact h1 {
+                font-size: 22pt;
+                color: #FFF;
+                border-bottom: solid 2px #FFF;
+                padding-bottom: 10px;
+            }
+            #item.contact h1 {
+                margin-bottom: 50px;
+            }
+            #item.list ul li {
+                font-family: Lato Light;
+                font-weight: 200;
+                font-size: 14pt;
+                color: #FFF;
+                list-style: circle;
+            }
+            #item.list p {
+                font-family: Lato Light;
+                color: #FFF;
+            }
+            #item.contact {
+                margin-top: -20px;
+                color: #FFF;
+            }
+            #item.contact p {
+                border: #CCC dashed 1.4px;
+                padding-left: 42px !important;
+                padding: 10px;
+                border-radius: 3px;
+            }
+            #item.contact p.phone {
+                font-family: Lato Black;
+                font-size: 18pt;
+            }
+            #item.contact p.location {
+                font-family: Lato;
+                font-size: 13pt;
+            }
+            #icon {
+                width: 64px;
+                height: 64px;
+                position: absolute;
+                margin-top: -12px;
+                margin-left: -30px;
+                background-repeat: no-repeat;
+                background-image: url("https://image.prntscr.com/image/07S1887ESX23iL4QmLqhLw.png");
+                border-radius: 50%;
+            }
+            #icon.phone {
+                background-position: -50px -25px;
+            }
+            #icon.location {
+                background-position: -50px -103px;
+            }
+            #icon.media {
+                background-position: -51px -177px;
+            }
+            #icon.mail {
+                background-position: -53px -270px;
+            }
+        </style>
+    </head>
+    <body>
+        <map name="gato">
+        <area shape="circle" coords="200,110,55" href="https://www.google.com.br" target="_blank">
+        </map>
+        <header>
+            <section id="picture_background">
+                <div id="container">
+                    <div class="pic"><img src="https://image.prntscr.com/image/VpARCoMGR8CFLFWdAXGnoA.png" usemap="#gato" /></div><div class="info"><h1>Wendell</h1><h4>Desenvolvimento web - Fórum 2</h3></div>
+                </div>
+            </section>
+        </header>
+        <section id="content_background">
+            <div id="container">
+                <div id="item" class="video">
+                    <h4>Vídeo</h4>
+                    <video width="353" height="209" controls>
+                        <source src="includes/videos/apresentacao.mp4" type="video/mp4">
+                        <p>Seu navegador não suporta esse conteúdo.</p>
+                    </video>
+                </div>
+                <div id="item" class="list">
+                    <h1>Experiência em T.I.</h1>
+                    <ul>
+                        <li>Desenvolvimento e manutenção de sistemas web;</li>
+                        <li>Desenvolvimento de telas e layouts;</li>
+                        <li>Gerenciamento de banco de dados;</li>
+                        <li>Linguagens: HTML, Javascript, PHP, SQL.</li>
+                    </ul>
+                    <p>Empresa: Melhor Streaming - Santos/SP (link)<br>
+                    Período: 2012-2015</p>
+                    <h1>Cursos</h1>
+                    <ul>
+                        <li>Análise e desenvolvimento de sistemas (cursando).</li>
+                    </ul>
+                    <h1>Outras especializações</h1>
+                    <ul>
+                        <li>Inglês avançado (Leitura, escrita, pronúncia e escuta);</li>
+                        <li>Experiência em atendimento e suporte ao cliente.</li>
+                    </ul>
+                </div>
+                <div id="item" class="contact">
+                    <table cellspacing="0" rowspan="0">
+                        <caption align="bottom">*Nem todas as informações aqui descritas são corretas.</caption>
+                        <tr>
+                            <th><h1>Contato</h1></th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div id="icon" class="phone"></div>
+                                <p class="phone">32 99999-9999</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div id="icon" class="location"></div>
+                                <p class="location">Ubá / Minas Gerais<br>CEP: 36500-001</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div id="icon" class="media"></div>
+                                <p class="location">fb.com/downluck<br>instagram.com/downluck_</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div id="icon" class="mail"></div>
+                                <p class="location">wendell.silva500@gmail.com</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
