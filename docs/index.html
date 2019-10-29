@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PETMonitor - Sistema de rastreamento</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="images/paw.png">
+        <link rel="stylesheet" href="includes/estilo.css" />
+    </head>
+    <body>
+        <nav>
+            <div id="menu_bar">
+                <div id="logo"></div>
+                <ul id="text">
+                    <li>Aplicativo para rastreamento do seu pet</li>
+                </ul>
+            </div>
+        </nav>
+        <section id="content">
+            <div id="leftContainer">
+                <h2 class="icon2" id="alertDanger">Cadastre seu pet</h2>
+                <form class="form" onsubmit="return false;">
+                    <label>Nome do Pet:</label>
+                    <input type="text" max-length="90" />
+                    <label>Raça:</label>
+                    <input type="text" max-length="90" />
+                    <label>Sexo:</label>
+                    <select>
+                        <option>Macho</option>
+                        <option>Fêmea</option>
+                    </select>
+                    <label>Latitude:</label>
+                    <input type="text" max-length="50">
+                    <label>Longitude:</label>
+                    <input type="text" max-length="50">
+                    <input id="alert" type="submit" value="Cadastrar pet" />
+                </form>
+            </div>
+            <div id="rightContainer">   
+                <h2 class="icon1">Pets cadastrados</h2>
+                <table class="table">
+                    <tr>
+                        <th>Nome do pet</th>
+                        <th>Raça</th>
+                        <th>Sexo</th>
+                        <th>Latitude</th>
+                        <th>Longitude</th>
+                        <th>Localização</th>
+                    </tr>
+                    <tr>
+                        <td>Kyara</td>
+                        <td>Poodle</td>
+                        <td>Fêmea</td>
+                        <td>-21.120560</td>
+                        <td>-42.939790</td>
+                        <td>Ubá/MG</td>
+                    </tr>
+                    <tr>
+                        <td>Doguinho</td>
+                        <td>Labrador</td>
+                        <td>Fêmea</td>
+                        <td>-21.124081</td>
+                        <td>-42.939062</td>
+                        <td>Ubá/MG</td>
+                    </tr>
+                    <tr>
+                        <td>Thunder</td>
+                        <td>Não definida</td>
+                        <td>Macho</td>
+                        <td>-21.122440</td>
+                        <td>-42.948413</td>
+                        <td>Ubá/MG</td>
+                    </tr>
+                    <tr>
+                        <td>Herói</td></t></td>
+                        <td>Pastor Alemão</td>
+                        <td>Macho</td>
+                        <td>-21.119838</td>
+                        <td>-42.938676</td>
+                        <td>Ubá/MG</td>
+                    </tr>
+                    <tr>
+                        <td>Canelinha</td>
+                        <td>Pitbull</td>
+                        <td>Fêmea</td>
+                        <td>-21.122640</td>
+                        <td>-42.939790</td>
+                        <td>Ubá/MG</td>
+                    </tr>
+                    <tr>
+                        <td>Lucky</td>
+                        <td>Beagle</td>
+                        <td>Macho</td>
+                        <td>-21.089500</td>
+                        <td>-42.968767</td>
+                        <td>Ubá/MG</td>
+                    </tr>
+                    <tr>
+                        <td>Princesa</td>
+                        <td>Chihuahua</td>
+                        <td>Fêmea</td>
+                        <td>-21.181351</td>
+                        <td>-43.020617</td>
+                        <td>Tocantins/MG</td>
+                    </tr>
+                    <tr>
+                        <td>Doguinho</td>
+                        <td>Labrador</td>
+                        <td>Fêmea</td>
+                        <td>-21.170615</td>
+                        <td>-43.024146</td>
+                        <td>Tocantins/MG</td>
+                    </tr>
+                    <tr>
+                        <td>Petisco</td>
+                        <td>Boston Terrier</td>
+                        <td>Macho</td>
+                        <td>-21.177258</td>
+                        <td>-43.022259</td>
+                        <td>Tocantins/MG</td>
+                    </tr>
+                    <tr>
+                        <td>Lynka</td>
+                        <td>Chow Chow</td>
+                        <td>Fêmea</td>
+                        <td>-21.166853</td>
+                        <td>-43.019256</td>
+                        <td>Tocantins/MG</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <footer>
+            &copy; 2019 - PetMonitor - Todos os direitos reservados.
+        </footer>
+        <script>
+            var DivAlert = document.getElementById('alert');
+            DivAlert.addEventListener('click', function(){
+                DivAlert.outerHTML += "<span style='font-size: 13px; width: 250px; display: block;'>*Não foi cadastrado nenhum dado pois trata-se somente de um protótipo.</span>";
+            });
+        </script>
+    </body>
+</html>
