@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Curriculum</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
+        <style>
+            html, body {
+                padding: 0;
+                margin: 0px;
+                font-family: Roboto, Arial, Calibri;
+                width: 100%;
+                background-color:rgb(80, 80, 80);
+            }
+            #container {
+                margin: 20px auto;
+                width: 996px;
+                border: rgb(37, 37, 37) solid 2px;
+                box-shadow:  rgb(19, 19, 19) 0px 0px 50px;
+                padding: 40px;
+                text-align: center;
+                background-color: #FFF;
+            }
+            #pic {
+                background-image:url('https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 250px;
+                min-width: 250px;
+                min-height: 250px;
+                color: #333;
+                border: rgb(71, 71, 71) solid 3px;
+                border-radius: 100%;
+            }
+            #content {
+                text-align: left;
+                max-width: 250px;
+                margin-top: -20px;
+            }
+            #side-one {
+                display: inline-block;
+                font-size: 20px;
+                max-width: 35%;
+                text-align: center;
+                vertical-align: top;
+                padding-right: 60px;
+            }
+            #side-two {
+                display: inline-block;
+                max-width: 60%;
+                vertical-align: top;
+                text-align: left;
+            }
+            h1.name {
+                width: 100%;
+                text-align: center;
+                font-weight: bold;
+            }
+            h2.underName {
+              text-align: center;
+              border: solid 1px #222;
+              font-weight: 300;
+              font-size: 1em;
+              margin-top:-10px;
+              padding: 6px;
+            }
+            h2.title {
+                border-bottom: solid 2px #333;
+            }
+            ul.list {
+                list-style: none;
+                font-size: 1rem;
+                line-height: 2;
+                margin: 0px;
+                padding: 0px;
+            }
+            ul.list b {
+                font-weight: 500;
+            }
+            #content h4.description {
+                font-weight: 400;
+            }
+            #side-two span.timeRange {
+                font-weight: 500;
+                font-size: 0.9rem;
+                font-style: italic;
+                color:#333;
+                display: block;
+                margin-top: -18px !important;
+            }
+            #side-two span.timeRange::before {
+                content: "Período: ";
+            }
+            #side-two h4.description {
+                font-weight: 300;
+            }
+            #side-two h3.description {
+                font-weight: 500;
+            }
+            #icon {
+                min-width: 32px;
+                min-height: 32px;
+                background-size: contain;
+                background-position: 0px -2px;
+                padding-left: 33px;
+                padding-top: 2px;
+                background-repeat: no-repeat;
+                font-weight: 300;
+                font-style: italic;
+                display: block;
+            }
+            #icon.insta {
+                background-image: url('https://cdn.iconscout.com/icon/free/png-256/instagram-233-896451.png');
+                background-repeat: no-repeat;
+            }
+            #icon.face {
+                background-image: url('https://cdn.iconscout.com/icon/free/png-256/facebook-social-media-fb-logo-square-44659.png');
+                background-repeat: no-repeat;
+                background-size: 31px 31px;
+            }
+            #icon.linkedIn {
+                background-image: url('https://cdn.iconscout.com/icon/free/png-256/linkedin-32-114604.png');
+                background-repeat: no-repeat;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+        <div id="side-one">
+            <div id="pic">
+            </div>
+            <div id="content">
+            <h1 class="name">João Augusto</h1>
+            <h2 class="underName">Analista de sistemas</h2>
+            <h2 class="title">Dados</h2>
+            <h4 class="description">
+                <ul class="list">
+                    <li>Idade: <b>27 anos</b></li>
+                    <li>Nascimento: <b>20/09/1993</b></li>
+                    <li>Endereço: <br/><b>Rua Fictícia, 250 - Bairro Fictício</b><br/>Cidade/UF: <br/><b>Somewhere/MG - CEP 00000-000</b></li>
+                </ul>
+            </h4>
+            <h2 class="title">Contatos</h2>
+            <h4 class="description">(99) 99999-9999<p><i>joao.augusto@ficticio.com</i></p></h4>
+            <h2 class="title">Redes sociais</h2>
+            <h4 id="icon" class="insta">/joao.ficticio</h4>
+            <h4 id="icon" class="face">/joao.ficticio</h4>
+            <h4 id="icon" class="linkedIn">/joao.ficticio</h4>
+            <h2 class="title">Adicional</h2>
+            <h4 class="description" style="font-size: .9em">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque consectetur modi autem, quaerat, id, dolorem architecto esse quidem fuga ea nobis vel dignissimos.</h4>
+            </div>
+        </div>
+        <div id="side-two">
+            <h2 class="title">Experiência</h2>
+            <h3 class="subtitle">EMPRESA 1</h3>
+            <span class="timeRange">2012 - 2014</span>
+            <h4 class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque consectetur modi autem, quaerat, id, dolorem architecto esse quidem fuga ea nobis vel dignissimos. Atque iure nobis possimus modi! Sapiente, veritatis.</h4>
+            <h3 class="subtitle">EMPRESA 2</h3>
+            <span class="timeRange">2014 - 2018</span>
+            <h4 class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque consectetur modi autem, quaerat, id, dolorem architecto esse quidem fuga ea nobis vel dignissimos. Atque iure nobis possimus modi! Sapiente, veritatis.</h4>
+            <h3 class="subtitle">EMPRESA 3</h3>
+            <span class="timeRange">2018 - 2020</span>
+            <h4 class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque consectetur modi autem, quaerat, id, dolorem architecto esse quidem fuga ea nobis vel dignissimos. Atque iure nobis possimus modi! Sapiente, veritatis.</h4>
+            
+            <h2 class="title">Formação acadêmica</h2>
+            <h3 class="subtitle">INSTITUIÇÃO DE ENSINO 1</h3>
+            <span class="timeRange">2012 - 2016</span>
+            <h4 class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque consectetur modi autem, quaerat, id, dolorem architecto esse quidem fuga ea nobis vel dignissimos. Atque iure nobis possimus modi! Sapiente, veritatis.</h4>
+            <h3 class="subtitle">INSTITUIÇÃO DE ENSINO 2</h3>
+            <span class="timeRange">2016 - 2018</span>
+            <h4 class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque consectetur modi autem, quaerat, id, dolorem architecto esse quidem fuga ea nobis vel dignissimos. Atque iure nobis possimus modi! Sapiente, veritatis.</h4>
+            <h3 class="subtitle">INSTITUIÇÃO DE ENSINO 3</h3>
+            <span class="timeRange">2018 - 2020</span>
+            <h4 class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque consectetur modi autem, quaerat, id, dolorem architecto esse quidem fuga ea nobis vel dignissimos. Atque iure nobis possimus modi! Sapiente, veritatis.</h4>
+
+            <h2 class="title">Aptidões e competências pessoais</h2>
+            <ul class="list">
+                <li>Lista</li>
+                <li>Lista</li>
+                <li>Lista</li>
+            </ul>
+            <h3 class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt qui perspiciatis velit itaque at omnis autem aut enim, nam harum facere unde maxime repudiandae dolor fugit soluta molestias odit natus.</h3>
+            <h2 class="title">Idiomas</h2>
+            <h3 class="description">
+                <ul class="list">
+                    <li>Inglês avançado</li>
+                    <li>Português nativo</li>
+                    <li>Espanhol intermediário</li>
+                </ul>
+            </h3>
+        </div>
+        </div>
+    </body>
+</html>
